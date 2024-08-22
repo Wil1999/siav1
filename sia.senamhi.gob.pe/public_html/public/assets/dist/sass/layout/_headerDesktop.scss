@@ -1,0 +1,98 @@
+.menuDesktop {
+    height: 58px;
+
+    header {
+        -webkit-box-align: center;
+        align-items: center;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px 1px;
+        box-sizing: border-box;
+        color: black;
+        display: flex;
+        font-family: "Euclid Triangle", "Open Sans", sans-serif;
+        font-size: 15px;
+        height: 58px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        min-height: 58px;
+        padding: 0px 48px 0px 32px;
+        position: fixed;
+        transition: background-color 0.5s ease 0s;
+        width: 100vw;
+        z-index: 3;
+    }
+
+    &_left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            padding: 0 10px;
+
+            img {
+                height: 30px;
+            }
+
+            &:first-child {
+                padding: 0 10px 0 0;
+
+                img {
+                    height: 50px;
+                }
+            }
+
+            &:last-child {
+                color: inherit;
+                display: inline-block;
+                line-height: 34px;
+                padding: 12px 16px;
+                position: relative;
+                text-decoration: none;
+                width: fit-content;
+                text-shadow: currentcolor 0.5px 0px 0px;
+            }
+        }
+    }
+
+    &_right {
+        a {
+            &:first-child {
+                color: inherit;
+                display: inline-block;
+                line-height: 34px;
+                padding: 12px 16px;
+                position: relative;
+                text-decoration: none;
+                width: fit-content;
+                text-shadow: currentcolor 0.5px 0px 0px;
+
+                &::after {
+                    background: #f9c000;
+                    bottom: 0px;
+                    content: "";
+                    display: block;
+                    left: 0px;
+                    position: absolute;
+                    height: 4px;
+                    width: 100%;
+                }
+            }
+
+            &:last-child {
+                color: inherit;
+                display: inline-block;
+                line-height: 34px;
+                padding: 12px 16px;
+                position: relative;
+                width: fit-content;
+            }
+
+            &:hover {
+                color: inherit;
+                text-decoration: none;
+                text-shadow: currentcolor 0.5px 0px 0px;
+            }
+        }
+    }
+}

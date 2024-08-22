@@ -1,0 +1,36 @@
+@keyframes fadeLeftRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeRightLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(-3px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aparition {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

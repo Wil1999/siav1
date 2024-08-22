@@ -1,0 +1,461 @@
+.containerVisor {
+    .panelControl_details {
+        .body {
+            .content {
+                &Box {
+                    .nivel {
+                        height: 80px;
+                        padding-bottom: 1em;
+
+                        &Box {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            padding: 1rem 1.25rem;
+                            background-color: #f7f7f7;
+                            border-radius: 10px;
+
+                            .muy-alto {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 65px;
+                                font-size: 12px;
+                                color: #555555;
+                                text-transform: uppercase;
+                                font-weight: bold;
+
+                                input {
+                                    position: initial;
+                                    margin-top: 0;
+                                    margin-left: 0;
+
+                                    &[type="checkbox"]:checked {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+
+                                        & + label::before {
+                                            background-color: #ff2200 !important;
+                                            content: url(../../img/ico-palometa.svg);
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &[type="checkbox"]:not(:checked) {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+                                    }
+
+                                    &[type="checkbox"] {
+                                        & + label:before {
+                                            border-color: #ff2200 !important;
+                                            background: rgba(255, 34, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+
+                                        & + label::after {
+                                            border-color: #ff2200 !important;
+                                            background: rgba(255, 34, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 25px !important;
+                                    padding-top: 10px;
+                                    padding-right: 25px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .alto {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 50px;
+                                font-size: 12px;
+                                color: #555555;
+                                text-transform: uppercase;
+                                font-weight: bold;
+
+                                input {
+                                    position: initial;
+                                    margin-top: 0;
+                                    margin-left: 0;
+
+                                    &[type="checkbox"]:checked {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+
+                                        & + label::before {
+                                            background-color: #f90 !important;
+                                            content: url(../../img/ico-palometa.svg);
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &[type="checkbox"]:not(:checked) {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+                                    }
+
+                                    &[type="checkbox"] {
+                                        & + label:before {
+                                            border-color: #f90 !important;
+                                            background: rgba(255, 153, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+
+                                        & + label::after {
+                                            border-color: #f90 !important;
+                                            background: rgba(255, 153, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 25px !important;
+                                    padding-top: 10px;
+                                    padding-right: 25px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .medio {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 60px;
+                                font-size: 12px;
+                                color: #555555;
+                                text-transform: uppercase;
+                                font-weight: bold;
+
+                                input {
+                                    position: initial;
+                                    margin-top: 0;
+                                    margin-left: 0;
+
+                                    &[type="checkbox"]:checked {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+
+                                        & + label::before {
+                                            background-color: #ff0 !important;
+                                            content: url(../../img/ico-palometa.svg);
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &[type="checkbox"]:not(:checked) {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+                                    }
+
+                                    &[type="checkbox"] {
+                                        & + label:before {
+                                            border-color: #ff0 !important;
+                                            background: rgba(255, 255, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+
+                                        & + label::after {
+                                            border-color: #ff0 !important;
+                                            background: rgba(255, 255, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 25px !important;
+                                    padding-top: 10px;
+                                    padding-right: 25px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .bajo {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 50px;
+                                font-size: 12px;
+                                color: #555555;
+                                text-transform: uppercase;
+                                font-weight: bold;
+
+                                input {
+                                    position: initial;
+                                    margin-top: 0;
+                                    margin-left: 0;
+
+                                    &[type="checkbox"]:checked {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+
+                                        & + label::before {
+                                            background-color: #7aab00 !important;
+                                            content: url(../../img/ico-palometa.svg);
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &[type="checkbox"]:not(:checked) {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+                                    }
+
+                                    &[type="checkbox"] {
+                                        & + label:before {
+                                            border-color: #7aab00 !important;
+                                            background: rgba(122, 171, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+
+                                        & + label::after {
+                                            border-color: #7aab00 !important;
+                                            background: rgba(122, 171, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 25px !important;
+                                    padding-top: 10px;
+                                    padding-right: 25px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .muy-bajo {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 65px;
+                                font-size: 12px;
+                                color: #555555;
+                                text-transform: uppercase;
+                                font-weight: bold;
+
+                                input {
+                                    position: initial;
+                                    margin-top: 0;
+                                    margin-left: 0;
+
+                                    &[type="checkbox"]:checked {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+
+                                        & + label::before {
+                                            background-color: #006100 !important;
+                                            content: url(../../img/ico-palometa.svg);
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    &[type="checkbox"]:not(:checked) {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        display: none;
+                                    }
+
+                                    &[type="checkbox"] {
+                                        & + label:before {
+                                            border-color: #006100 !important;
+                                            background: rgba(0, 97, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+
+                                        & + label::after {
+                                            border-color: #006100 !important;
+                                            background: rgba(0, 97, 0, 0.25);
+                                            content: "";
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 18px;
+                                            z-index: 0;
+                                            border: 2px solid #ddd;
+                                            border-radius: 3px;
+                                            margin-top: 0;
+                                            -webkit-transition: color 0.8s linear 0.2s;
+                                            transition: color 0.8s linear 0.2s;
+                                        }
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 25px !important;
+                                    padding-top: 10px;
+                                    padding-right: 25px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .selector {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding: 1rem 0 1.25rem 0;
+
+                        input {
+                            position: initial;
+                            margin-top: 0;
+                            margin-left: 0;
+
+                            &[type="checkbox"]:checked {
+                                opacity: 0;
+                                pointer-events: none;
+                                display: none;
+
+                                & + label::before {
+                                    background-color: #ddd !important;
+                                    content: url(../../img/ico-palometa.svg);
+                                    padding: 0;
+                                }
+                            }
+
+                            &[type="checkbox"]:not(:checked) {
+                                opacity: 0;
+                                pointer-events: none;
+                                display: none;
+                            }
+
+                            &[type="checkbox"] {
+                                & + label:before {
+                                    border-color: #ddd !important;
+                                    content: "";
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 18px;
+                                    z-index: 0;
+                                    border: 2px solid #ddd;
+                                    border-radius: 3px;
+                                    margin-top: 0;
+                                    -webkit-transition: color 0.8s linear 0.2s;
+                                    transition: color 0.8s linear 0.2s;
+                                }
+
+                                & + label::after {
+                                    border-color: #ddd !important;
+                                    content: "";
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 18px;
+                                    z-index: 0;
+                                    border: 2px solid #ddd;
+                                    border-radius: 3px;
+                                    margin-top: 0;
+                                    -webkit-transition: color 0.8s linear 0.2s;
+                                    transition: color 0.8s linear 0.2s;
+                                }
+                            }
+                        }
+
+                        label {
+                            margin-bottom: 25px !important;
+                            padding-left: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

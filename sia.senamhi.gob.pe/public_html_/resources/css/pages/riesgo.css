@@ -1,0 +1,674 @@
+.containerVisor .panelControl_details .body .header .file {
+    font-family: Euclid Triangle, Open Sans, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+}
+
+.containerVisor .panelControl_details .body .header .file a i {
+    vertical-align: middle;
+    color: #555555;
+    font-size: larger;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivel {
+    height: 80px;
+    padding-bottom: 1em;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input[type="checkbox"]:checked+label::before {
+    background-color: #ff2200 !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input[type="checkbox"]+label:before {
+    border-color: #ff2200 !important;
+    background: rgba(255, 34, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto input[type="checkbox"]+label::after {
+    border-color: #ff2200 !important;
+    background: rgba(255, 34, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-alto label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input[type="checkbox"]:checked+label::before {
+    background-color: #f90 !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input[type="checkbox"]+label:before {
+    border-color: #f90 !important;
+    background: rgba(255, 153, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto input[type="checkbox"]+label::after {
+    border-color: #f90 !important;
+    background: rgba(255, 153, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .alto label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input[type="checkbox"]:checked+label::before {
+    background-color: #ff0 !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input[type="checkbox"]+label:before {
+    border-color: #ff0 !important;
+    background: rgba(255, 255, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio input[type="checkbox"]+label::after {
+    border-color: #ff0 !important;
+    background: rgba(255, 255, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .medio label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input[type="checkbox"]:checked+label::before {
+    background-color: #7aab00 !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input[type="checkbox"]+label:before {
+    border-color: #7aab00 !important;
+    background: rgba(122, 171, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo input[type="checkbox"]+label::after {
+    border-color: #7aab00 !important;
+    background: rgba(122, 171, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .bajo label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input[type="checkbox"]:checked+label::before {
+    background-color: #006100 !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input[type="checkbox"]+label:before {
+    border-color: #006100 !important;
+    background: rgba(0, 97, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo input[type="checkbox"]+label::after {
+    border-color: #006100 !important;
+    background: rgba(0, 97, 0, 0.25);
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .nivelBox .muy-bajo label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 1rem 0 1.25rem 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input[type="checkbox"]:checked+label::before {
+    background-color: #ddd !important;
+    content: url(../../../public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input[type="checkbox"]+label:before {
+    border-color: #ddd !important;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector input[type="checkbox"]+label::after {
+    border-color: #ddd !important;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+.containerVisor .panelControl_details .body .contentBox .selector label {
+    margin-bottom: 25px !important;
+    padding-left: 15px;
+    text-align: center;
+}
+
+/**TEST**/
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-pills {
+    margin-bottom: 0;
+}
+
+.nav>li>a {
+    color: #6e7179;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills>li+li {
+    margin-left: 5px;
+}
+
+.nav-pills .nav-link.active.muy-bajo {
+    background-color: #006100;
+    color: #ffffff !important;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.bajo {
+    background-color: #7aab00;
+    color: #ffffff !important;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.medio {
+    background-color: #ff0;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.alto {
+    background-color: #f90;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.muy-alto {
+    background-color: #ff2200;
+    color: #ffffff !important;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.muy-bajo,
+.nav-pills .nav-link.active.bajo,
+.nav-pills .nav-link.active.medio,
+.nav-pills .nav-link.active.alto,
+.nav-pills .nav-link.active.muy-alto {
+    color: #000000;
+}
+
+.tab-content {
+    background: #f7f7f7;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    opacity: 1;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.text-danger {
+    color: #ff5b57 !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+#ubicacionDep2 p a {
+    color: #808080;
+    background-color: transparent;
+}
+
+#noHayDepAfectados p a {
+    color: #808080;
+    background-color: transparent;
+}
+
+.d-none {
+    display: none;
+}
+
+.changePanel {
+    color: #555555;
+}
+
+.changePanel.active {
+    pointer-events: none;
+    font-weight: 700;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.selectCustom {
+    display: block;
+    width: 35%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.contentBox.mapHistorialContainer {
+    height: 500px;
+}
+
+.tabla-historial {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    /*margin: 10px auto;*/
+    text-align: center;
+    width: 100%;
+    /*max-width: 500px;*/
+}
+
+.tabla-historial caption {
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.tabla-historial thead tr,
+.tabla-historial tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.tabla-historial thead th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+/*# sourceMappingURL=main.css.map */

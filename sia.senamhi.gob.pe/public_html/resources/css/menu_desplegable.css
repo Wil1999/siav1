@@ -1,0 +1,1800 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EAEBEF;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav{
+  position: relative;
+  width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav__link{
+    color: #303440;
+    text-align: left;
+    border: #303440;
+    /*display: block;
+    padding: 15px 0;
+    text-decoration: none;*/
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 0px;
+
+    
+}
+
+.nav__link--inside:hover{
+    background: #F6F8FA;
+    
+}
+
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+    border: 1;
+}
+
+.list__item{
+    list-style: none;
+    margin: 5px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    background: rgb(245, 243, 243);
+
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: left;
+    gap: 0.5em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 100%;
+    margin-left: auto;
+    /*border-left: 2px solid #6a9426;*/
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+    cursor: none;
+}
+
+
+
+/** FILTRO RANGO **/
+ .contentBox .nivel {
+    height: 50px;
+    padding-bottom: unset;
+}
+
+ .contentBox .nivelBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+ .contentBox .nivelBox .mayor-70 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .mayor-70 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .mayor-70 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .mayor-70 input[type="checkbox"]:checked+label::before {
+    background-color: #002573 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .mayor-70 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .mayor-70 input[type="checkbox"]+label:before {
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .mayor-70 input[type="checkbox"]+label::after {
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .mayor-70 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+
+
+
+ .contentBox .nivelBox .entre-60-70 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-60-70 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+
+}
+/*
+ .contentBox .nivelBox .entre-60-70 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-60-70 input[type="checkbox"]:checked+label::before {
+    background-color: #004c73 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-60-70 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-60-70 input[type="checkbox"]+label:before {
+    border-color: #004c73 !important;
+    background: rgba(0, 76, 115, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-60-70 input[type="checkbox"]+label::after {
+    border-color: #004c73 !important;
+    background: rgba(0, 76, 115, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-60-70 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-50-60 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-50-60 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-50-60 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-50-60 input[type="checkbox"]:checked+label::before {
+    background-color: #0084a8 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-50-60 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-50-60 input[type="checkbox"]+label:before {
+    border-color: #0084a8 !important;
+    background: rgba(0, 132, 168, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-50-60 input[type="checkbox"]+label::after {
+    border-color: #0084a8 !important;
+    background: rgba(0, 132, 168, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-50-60 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-45-50 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-45-50 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-45-50 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-45-50 input[type="checkbox"]:checked+label::before {
+    background-color: #329900 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-45-50 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-45-50 input[type="checkbox"]+label:before {
+    border-color: #329900 !important;
+    background: rgba(50, 153, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-45-50 input[type="checkbox"]+label::after {
+    border-color: #329900 !important;
+    background: rgba(50, 153, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-45-50 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-40-45 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-40-45 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+
+}
+/*
+ .contentBox .nivelBox .entre-40-45 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-40-45 input[type="checkbox"]:checked+label::before {
+    background-color: #40bf00 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-40-45 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-40-45 input[type="checkbox"]+label:before {
+    border-color: #40bf00 !important;
+    background: rgba(64, 191, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-40-45 input[type="checkbox"]+label::after {
+    border-color: #40bf00 !important;
+    background: rgba(64, 191, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-40-45 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-35-40 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-35-40 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-35-40 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-35-40 input[type="checkbox"]:checked+label::before {
+    background-color: #00a853 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-35-40 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-35-40 input[type="checkbox"]+label:before {
+    border-color: #00a853 !important;
+    background: rgba(0, 168, 83, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-35-40 input[type="checkbox"]+label::after {
+    border-color: #00a853 !important;
+    background: rgba(0, 168, 83, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-35-40 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-30-35 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-30-35 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-30-35 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-30-35 input[type="checkbox"]:checked+label::before {
+    background-color: #55ff00 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-30-35 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-30-35 input[type="checkbox"]+label:before {
+    border-color: #55ff00 !important;
+    background: rgba(85, 255, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-30-35 input[type="checkbox"]+label::after {
+    border-color: #55ff00 !important;
+    background: rgba(85, 255, 0, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-30-35 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-25-30 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-25-30 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-25-30 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-25-30 input[type="checkbox"]:checked+label::before {
+    background-color: #aaff02 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-25-30 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-25-30 input[type="checkbox"]+label:before {
+    border-color: #aaff02 !important;
+    background: rgba(170, 255, 2, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-25-30 input[type="checkbox"]+label::after {
+    border-color: #aaff02 !important;
+    background: rgba(170, 255, 2, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-25-30 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-20-25 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-20-25 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-20-25 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-20-25 input[type="checkbox"]:checked+label::before {
+    background-color: #00e6a8 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-20-25 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-20-25 input[type="checkbox"]+label:before {
+    border-color: #00e6a8 !important;
+    background: rgba(0, 230, 168, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-20-25 input[type="checkbox"]+label::after {
+    border-color: #00e6a8 !important;
+    background: rgba(0, 230, 168, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-20-25 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-15-20 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-15-20 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-15-20 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-15-20 input[type="checkbox"]:checked+label::before {
+    background-color: #ffd380 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-15-20 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-15-20 input[type="checkbox"]+label:before {
+    border-color: #ffd380 !important;
+    background: rgba(255, 211, 128, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-15-20 input[type="checkbox"]+label::after {
+    border-color: #ffd380 !important;
+    background: rgba(255, 211, 128, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-15-20 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-10-15 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-10-15 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-10-15 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-10-15 input[type="checkbox"]:checked+label::before {
+    background-color: #ffaa01 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-10-15 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-10-15 input[type="checkbox"]+label:before {
+    border-color: #ffaa01 !important;
+    background: rgba(255, 170, 1, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-10-15 input[type="checkbox"]+label::after {
+    border-color: #ffaa01 !important;
+    background: rgba(255, 170, 1, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-10-15 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-5-10 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-5-10 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-5-10 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-5-10 input[type="checkbox"]:checked+label::before {
+    background-color: #a87001 !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-5-10 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-5-10 input[type="checkbox"]+label:before {
+    border-color: #a87001 !important;
+    background: rgba(168, 112, 1, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-5-10 input[type="checkbox"]+label::after {
+    border-color: #a87001 !important;
+    background: rgba(168, 112, 1, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-5-10 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .nivelBox .entre-0-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65px;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .contentBox .nivelBox .entre-0-5 input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .nivelBox .entre-0-5 input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-0-5 input[type="checkbox"]:checked+label::before {
+    background-color: #fff !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .nivelBox .entre-0-5 input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .nivelBox .entre-0-5 input[type="checkbox"]+label:before {
+    border-color: #b7b7b7 !important;
+    background: rgba(255, 255, 255, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .nivelBox .entre-0-5 input[type="checkbox"]+label::after {
+    border-color: #b7b7b7 !important;
+    background: rgba(255, 255, 255, 0.25);
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .nivelBox .entre-0-5 label {
+    margin-bottom: 25px !important;
+    padding-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+ .contentBox .selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 1rem 0 1.25rem 0;
+}
+
+ .contentBox .selector input {
+    position: initial;
+    margin-top: 0;
+    margin-left: 0;
+
+    
+    border-color: #002573 !important;
+    background: rgba(0, 37, 115, 0.25);
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+
+}
+/*
+ .contentBox .selector input[type="checkbox"]:checked {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .selector input[type="checkbox"]:checked+label::before {
+    background-color: #ddd !important;
+    content: url(public/assets/img/ico-palometa.svg);
+    padding: 0;
+}
+
+ .contentBox .selector input[type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+ .contentBox .selector input[type="checkbox"]+label:before {
+    border-color: #ddd !important;
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+
+ .contentBox .selector input[type="checkbox"]+label::after {
+    border-color: #ddd !important;
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-top: 0;
+    -webkit-transition: color 0.8s linear 0.2s;
+    transition: color 0.8s linear 0.2s;
+}
+*/
+ .contentBox .selector label {
+    margin-bottom: 25px !important;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/** FILTRO RANGO **/
+
+
+/**TEST**/
+
+.nav {
+    display: -ms-flexbox;
+    display: flex; /* poner block para que sea columna */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+.nav-pills {
+    margin-bottom: 0;
+}
+
+.nav>li>a {
+    color: black;
+    /*border: 1px solid #ced4da;*/
+   /* width: 20%;*/ 
+}
+
+.nav-link {
+    display: block;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills>li+li {
+    margin-left: 5px;
+}
+
+/*cada rango cuando se da click*/
+.nav-pills .nav-link.active.mayor-70,
+.nav-pills .nav-link.active.entre-60-70,
+.nav-pills .nav-link.active.entre-50-60,
+.nav-pills .nav-link.active.entre-45-50,
+.nav-pills .nav-link.active.entre-40-45,
+.nav-pills .nav-link.active.entre-35-40,
+.nav-pills .nav-link.active.entre-30-35,
+.nav-pills .nav-link.active.entre-25-30,
+.nav-pills .nav-link.active.entre-20-25,
+.nav-pills .nav-link.active.entre-15-20,
+.nav-pills .nav-link.active.entre-10-15,
+.nav-pills .nav-link.active.entre-5-10,
+.nav-pills .nav-link.active.entre-0-5 {
+    color: #000000;
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.nav-pills .nav-link.active.mayor-70 {
+    background-color: #002573;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-60-70 {
+    background-color: #004c73;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-50-60 {
+    background-color: #0084a8;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-45-50 {
+    background-color: #329900;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-40-45 {
+    background-color: #40bf00;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-35-40 {
+    background-color: #00a853;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-30-35 {
+    background-color: #55ff00;
+}
+
+.nav-pills .nav-link.active.entre-25-30 {
+    background-color: #aaff02;
+}
+
+.nav-pills .nav-link.active.entre-20-25 {
+    background-color: #00e6a8;
+}
+
+.nav-pills .nav-link.active.entre-15-20 {
+    background-color: #ffd380;
+}
+
+.nav-pills .nav-link.active.entre-10-15 {
+    background-color: #ffaa01;
+}
+
+.nav-pills .nav-link.active.entre-5-10 {
+    background-color: #a87001;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active.entre-0-5 {
+    background-color: #ffffff;
+}
+
+.tab-content {
+    background: #f7f7f7;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.fade {
+    opacity: 1;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.text-danger {
+    color: #ff5b57 !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+#ubicacionDep2 p a {
+    color: #808080;
+    background-color: transparent;
+}
+
+#noHayDepAfectados p a {
+    color: #808080;
+    background-color: transparent;
+}
+
+.d-none {
+    display: none;
+}
+
+.changePanel {
+    color: #555555;
+}
+
+.changePanel.active {
+    pointer-events: none;
+    font-weight: 700;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.selectCustom {
+    display: block;
+    width: 35%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.contentBox.mapHistorialContainer {
+    height: 500px;
+}
+
+.tabla-historial {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    /*margin: 10px auto;*/
+    text-align: center;
+    width: 100%;
+    /*max-width: 500px;*/
+}
+
+.tabla-historial caption {
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.tabla-historial thead tr,
+.tabla-historial tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.tabla-historial thead th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+/************/
+
+
+.menuDesktop {
+    height: 158px;
+    
+  }
+  
+
+  /****COMBO****/
+  .capa_cbx
+  {
+    position:relative;
+  }
+
+  .capa_cbx .cbx_rango {
+    border: 0px;
+    border-color: red;
+    top: 1px;
+    margin-left: 10px;
+    overflow: hidden;
+    max-height: 100%;
+  }
+
+  .capa_cbx .cbx_dptos
+  {
+    position: relative;
+    margin-top: 1px;
+    display: none;
+  }
+
+  /*********div flotante con dptos*******/
+
+  .grafico_flotante
+{
+    position: relative;
+    margin-top:  10px;
+    margin-left: 5px;
+    width: 100%;
+    height: 10%;
+    background: #fff000;
+    align-items: center;
+    z-index: 10000000000;
+    border-radius: 4px;
+    border: 1px solid #000;
+    display: block;
+    
+}
+
+  /**************************************/  
+
+  #amazonas.text-light.depBuscarZoom.active,
+  #ancash.text-light.depBuscarZoom.active,
+  #apurimac.text-light.depBuscarZoom.active,
+  #arequipa.text-light.depBuscarZoom.active,
+  #ayacucho.text-light.depBuscarZoom.active,
+  #cajamarca.text-light.depBuscarZoom.active,
+  #cusco.text-light.depBuscarZoom.active,
+  #huancavelica.text-light.depBuscarZoom.active,
+  #huanuco.text-light.depBuscarZoom.active,
+  #ica.text-light.depBuscarZoom.active,
+  #junin.text-light.depBuscarZoom.active,
+  #lambayeque.text-light.depBuscarZoom.active,
+  #lima.text-light.depBuscarZoom.active,
+  #loreto.text-light.depBuscarZoom.active,
+  #madre-de-dios.text-light.depBuscarZoom.active, 
+  #moquegua.text-light.depBuscarZoom.active,
+  #pasco.text-light.depBuscarZoom.active,
+  #piura.text-light.depBuscarZoom.active,
+  #puno.text-light.depBuscarZoom.active,
+  #san-martin.text-light.depBuscarZoom.active,
+  #tacna.text-light.depBuscarZoom.active,
+  #tumbes.text-light.depBuscarZoom.active,
+  #ucayali.text-light.depBuscarZoom.active
+  {
+    color:white;
+    background-color: rgb(120, 168, 230);
+    font-size: 16px;
+    border-radius: 2px;
+    
+    
+  } 
+
+  #amazonas_bagua.dep_amazonas.depTotales.text-light.d-none.active, 
+  #amazonas_utcubamba.dep_amazonas.depTotales.text-light.d-none.active, 
+  #ancash_bolognesi.dep_ancash.depTotales.text-light.d-none.active, 
+  #apurimac_abancay.dep_apurimac.depTotales.text-light.d-none.active, 
+  #apurimac_andahuaylas.dep_apurimac.depTotales.text-light.d-none.active, 
+  #apurimac_cotabambas.dep_apurimac.depTotales.text-light.d-none.active, 
+  #arequipa_arequipa.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_caraveli.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_castilla.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_caylloma.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_condesuyos.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_islay.dep_arequipa.depTotales.text-light.d-none.active, 
+  #arequipa_la-union.dep_arequipa.depTotales.text-light.d-none.active, 
+  #ayacucho_cangallo.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_huamanga.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_huanta.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_la-mar.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_lucanas.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_paucar-del-sara-sara.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_sucre.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_victor-fajardo.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #ayacucho_vilcas-huaman.dep_ayacucho.depTotales.text-light.d-none.active, 
+  #cajamarca_cajamarca.dep_cajamarca.depTotales.text-light.d-none.active, 
+  #cajamarca_contumaza.dep_cajamarca.depTotales.text-light.d-none.active, 
+  #cajamarca_jaen.dep_cajamarca.depTotales.text-light.d-none.active, 
+  #cusco_anta.dep_cusco.depTotales.text-light.d-none.active, 
+  #cusco_calca.dep_cusco.depTotales.text-light.d-none.active, 
+  #cusco_chumbivilcas.dep_cusco.depTotales.text-light.d-none.active, 
+  #cusco_la-convencion.dep_cusco.depTotales.text-light.d-none.active, 
+  #cusco_paucartambo.dep_cusco.depTotales.text-light.d-none.active, 
+  #cusco_quispicanchi.dep_cusco.depTotales.text-light.d-none.active, 
+  #huancavelica_acobamba.dep_huancavelica.depTotales.text-light.d-none.active, 
+  #huancavelica_angaraes.dep_huancavelica.depTotales.text-light.d-none.active, 
+  #huancavelica_churcampa.dep_huancavelica.depTotales.text-light.d-none.active, 
+  #huancavelica_huaytara.dep_huancavelica.depTotales.text-light.d-none.active, 
+  #huanuco_leoncio-prado.dep_huanuco.depTotales.text-light.d-none.active, 
+  #huanuco_maraÃ±on.dep_huanuco.depTotales.text-light.d-none.active, 
+  #huanuco_puerto-inca.dep_huanuco.depTotales.text-light.d-none.active, 
+  #ica_ica.dep_ica.depTotales.text-light.d-none.active, 
+  #ica_nasca.dep_ica.depTotales.text-light.d-none.active, 
+  #ica_palpa.dep_ica.depTotales.text-light.d-none.active, 
+  #ica_pisco.dep_ica.depTotales.text-light.d-none.active, 
+  #junin_chanchamayo.dep_junin.depTotales.text-light.d-none.active, 
+  #junin_satipo.dep_junin.depTotales.text-light.d-none.active, 
+  #lambayeque_lambayeque.dep_lambayeque.depTotales.text-light.d-none.active, 
+  #lima_yauyos.dep_lima.depTotales.text-light.d-none.active, 
+  #loreto_loreto.dep_loreto.depTotales.text-light.d-none.active, 
+  #loreto_mariscal-ramon-castilla.dep_loreto.depTotales.text-light.d-none.active, 
+  #loreto_maynas.dep_loreto.depTotales.text-light.d-none.active, 
+  #loreto_putumayo.dep_loreto.depTotales.text-light.d-none.active, 
+  #loreto_requena.dep_loreto.depTotales.text-light.d-none.active, 
+  #loreto_ucayali.dep_loreto.depTotales.text-light.d-none.active, 
+  #madre-de-dios_manu.dep_madre-de-dios.depTotales.text-light.d-none.active, 
+  #madre-de-dios_tahuamanu.dep_madre-de-dios.depTotales.text-light.d-none.active, 
+  #madre-de-dios_tambopata.dep_madre-de-dios.depTotales.text-light.d-none.active, 
+  #moquegua_general-sanchez-cerro.dep_moquegua.depTotales.text-light.d-none.active, 
+  #moquegua_mariscal-nieto.dep_moquegua.depTotales.text-light.d-none.active, 
+  #pasco_oxapampa.dep_pasco.depTotales.text-light.d-none.active, 
+  #piura_ayabaca.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_huancabamba.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_morropon.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_paita.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_piura.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_sechura.dep_piura.depTotales.text-light.d-none.active, 
+  #piura_sullana.dep_piura.depTotales.text-light.d-none.active, 
+  #puno_carabaya.dep_puno.depTotales.text-light.d-none.active, 
+  #puno_sandia.dep_puno.depTotales.text-light.d-none.active, 
+  #san-martin_bellavista.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_el-dorado.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_huallaga.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_lamas.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_mariscal-caceres.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_picota.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_san-martin.dep_san-martin.depTotales.text-light.d-none.active, 
+  #san-martin_tocache.dep_san-martin.depTotales.text-light.d-none.active, 
+  #tacna_jorge-basadre.dep_tacna.depTotales.text-light.d-none.active, 
+  #ucayali_atalaya.dep_ucayali.depTotales.text-light.d-none.active, 
+  #ucayali_coronel-portillo.dep_ucayali.depTotales.text-light.d-none.active, 
+  #ucayali_padre-abad.dep_ucayali.depTotales.text-light.d-none.active, 
+  #ucayali_purus.dep_ucayali.depTotales.text-light.d-none.active 
+  {
+    
+    color:white;
+    background-color: rgb(120, 168, 230);
+    font-size: 16px;
+    
+  }
+
+  .icono_grafico
+  {
+    border-right:10px; right: 10px; border-bottom: 20px;    
+  }
+

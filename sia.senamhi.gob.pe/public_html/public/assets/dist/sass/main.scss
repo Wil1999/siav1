@@ -1,0 +1,21 @@
+//Import abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//Import base
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//Import Pages
+
+//Import components
+@import "components/table";
+@import "components/modal";
+//@import "components/filterNivel";
+@import "components/panelControl";
+@import "components/servicesMenu";
+
+//Import layout
+@import "layout/headerDesktop";
